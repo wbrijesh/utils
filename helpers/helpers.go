@@ -22,3 +22,12 @@ func DurationToString(duration time.Duration) string {
 	}
 	return fmt.Sprintf("%f", duration.Seconds()) + "s"
 }
+
+func IndexOf(string string, character byte) int {
+	for i := 0; i < len(string); i++ {
+		if string[i] == character {
+			return i
+		}
+	}
+	return -1
+}
